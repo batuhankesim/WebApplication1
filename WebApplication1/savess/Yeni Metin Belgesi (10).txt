@@ -1,0 +1,31 @@
+ /*private static List<FileModel> GetFiles()
+        {
+            List<FileModel> files = new List<FileModel>();
+            string constr = ConfigurationManager.ConnectionStrings["default"].ConnectionString;
+            using (NpgsqlConnection con = new NpgsqlConnection(constr))
+            {
+                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT id,hislemtarihi, hkartno, mtckimlikno,hislemtutari,hharekettipi,hislemaciklamasi, hmerchname FROM hareket"))
+                {
+                    cmd.Connection = con;
+                    con.Open();
+                    using (NpgsqlDataReader sdr = cmd.ExecuteReader())
+                    {
+                        while (sdr.Read())
+                        {
+                            files.Add(new FileModel
+                            {
+                                id = Convert.ToInt32(sdr["id"]),
+                                hislemtarihi = Convert.ToDateTime(sdr["hislemtarihi"]).ToString(),
+                                hkartno = Convert.ToInt64(sdr["hkartno"]).ToString(),
+                                mtckimlikno = Convert.ToInt64(sdr["mtckimlikno"]).ToString(),
+                                hislemtutari =Convert.ToDouble(sdr["hislemtutari"]).ToString(),
+                                hharekettipi = sdr["hharekettipi"].ToString(),
+                                hislemaciklamasi = sdr["hislemaciklamasi"].ToString(),
+                                hmerchname = sdr["hmerchname"].ToString()
+                            });
+                        }
+                    }
+                    con.Close();
+                }
+            }
+            return files;*/
