@@ -25,6 +25,8 @@ namespace WebApplication1.Models
 
         public string iislemadi { get; set; }
 
+        public int dosyaid { get; set; }
+
 
     }
 }

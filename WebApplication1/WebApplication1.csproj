@@ -172,6 +172,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\dosya.cs" />
     <Compile Include="Models\hareket.cs" />
     <Compile Include="Models\Model2.Context.cs">
       <AutoGen>True</AutoGen>
